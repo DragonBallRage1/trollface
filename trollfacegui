@@ -1,0 +1,596 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local Gui = Instance.new("ScreenGui")
+local OpenButton = Instance.new("ImageButton")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Border = Instance.new("UIStroke")
+local Soniceexe = Instance.new("ImageLabel")
+local sonicexe = Instance.new("TextLabel")
+local Text = Instance.new("UIStroke")
+local Closebutton = Instance.new("ImageButton")
+local Hacks = Instance.new("ScrollingFrame")
+local Jump = Instance.new("TextButton")
+local Border_2 = Instance.new("UIStroke")
+local UICorner_2 = Instance.new("UICorner")
+local Text_2 = Instance.new("UIStroke")
+local Speed = Instance.new("TextButton")
+local Border_3 = Instance.new("UIStroke")
+local UICorner_3 = Instance.new("UICorner")
+local Text_3 = Instance.new("UIStroke")
+local Fly = Instance.new("TextButton")
+local Border_4 = Instance.new("UIStroke")
+local UICorner_4 = Instance.new("UICorner")
+local Text_4 = Instance.new("UIStroke")
+
+-- Properties:
+
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Gui.ResetOnSpawn = false
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = Gui
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BackgroundTransparency = 1.000
+OpenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Position = UDim2.new(0.129999995, 0, -0.0909999982, 0)
+OpenButton.Size = UDim2.new(0.0450000279, 0, 0.0900000483, 0)
+OpenButton.Image = "http://www.roblox.com/asset/?id=9585820180"
+OpenButton.ImageTransparency = 0.500
+
+Main.Name = "Main"
+Main.Parent = Gui
+Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.349315047, 0, 0.19826369, 0)
+Main.Size = UDim2.new(0.300000012, 0, 0.600000024, 0)
+Main.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 45)
+UICorner.Parent = Main
+
+Border.Thickness = 10
+Border.Name = "Border"
+Border.Parent = Main
+
+Soniceexe.Name = "Sonice exe"
+Soniceexe.Parent = Main
+Soniceexe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Soniceexe.BackgroundTransparency = 1.000
+Soniceexe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Soniceexe.BorderSizePixel = 0
+Soniceexe.Position = UDim2.new(0.027904693, 0, 0.0233100224, 0)
+Soniceexe.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+Soniceexe.Image = "http://www.roblox.com/asset/?id=9585820180"
+
+sonicexe.Name = "sonic exe"
+sonicexe.Parent = Main
+sonicexe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sonicexe.BackgroundTransparency = 1.000
+sonicexe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sonicexe.BorderSizePixel = 0
+sonicexe.Position = UDim2.new(0.208016306, 0, 0.0641025603, 0)
+sonicexe.Size = UDim2.new(0.580923378, 0, 0.0630536526, 0)
+sonicexe.Font = Enum.Font.Bangers
+sonicexe.LineHeight = 0.000
+sonicexe.Text = "The Trollface Exploits"
+sonicexe.TextColor3 = Color3.fromRGB(0, 0, 0)
+sonicexe.TextScaled = true
+sonicexe.TextSize = 14.000
+sonicexe.TextWrapped = true
+
+Text.Color = Color3.fromRGB(255, 255, 255)
+Text.Thickness = 5
+Text.Name = "Text"
+Text.Parent = sonicexe
+
+Closebutton.Name = "Close button"
+Closebutton.Parent = Main
+Closebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Closebutton.BackgroundTransparency = 1.000
+Closebutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Closebutton.BorderSizePixel = 0
+Closebutton.Position = UDim2.new(0.852359235, 0, 0.0211864188, 0)
+Closebutton.Size = UDim2.new(0.100000001, 0, 0.100000001, 0)
+Closebutton.Image = "http://www.roblox.com/asset/?id=5107150301"
+Closebutton.ImageColor3 = Color3.fromRGB(255, 0, 0)
+
+Hacks.Name = "Hacks"
+Hacks.Parent = Main
+Hacks.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Hacks.BackgroundTransparency = 1.000
+Hacks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hacks.BorderSizePixel = 0
+Hacks.Position = UDim2.new(0, 0, 0.170396388, 0)
+Hacks.Selectable = false
+Hacks.Size = UDim2.new(1.00000024, 0, 0.826689839, 0)
+Hacks.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+Jump.Name = "Jump"
+Jump.Parent = Hacks
+Jump.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Jump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jump.BorderSizePixel = 0
+Jump.Position = UDim2.new(0.205463141, 0, 0.140000001, 0)
+Jump.Size = UDim2.new(0.58100003, 0, 0.075000003, 0)
+Jump.Font = Enum.Font.Bangers
+Jump.LineHeight = 0.000
+Jump.Text = "Jump"
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextScaled = true
+Jump.TextSize = 14.000
+Jump.TextWrapped = true
+
+Border_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Border_2.Thickness = 10
+Border_2.Name = "Border"
+Border_2.Parent = Jump
+
+UICorner_2.CornerRadius = UDim.new(0, 45)
+UICorner_2.Parent = Jump
+
+Text_2.Color = Color3.fromRGB(255, 255, 255)
+Text_2.Thickness = 5
+Text_2.Name = "Text"
+Text_2.Parent = Jump
+
+Speed.Name = "Speed"
+Speed.Parent = Hacks
+Speed.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.205463141, 0, 0.0199999996, 0)
+Speed.Size = UDim2.new(0.58100003, 0, 0.075000003, 0)
+Speed.Font = Enum.Font.Bangers
+Speed.LineHeight = 0.000
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+Border_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Border_3.Thickness = 10
+Border_3.Name = "Border"
+Border_3.Parent = Speed
+
+UICorner_3.CornerRadius = UDim.new(0, 45)
+UICorner_3.Parent = Speed
+
+Text_3.Color = Color3.fromRGB(255, 255, 255)
+Text_3.Thickness = 5
+Text_3.Name = "Text"
+Text_3.Parent = Speed
+
+Fly.Name = "Fly"
+Fly.Parent = Hacks
+Fly.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.204999998, 0, 0.25999999, 0)
+Fly.Size = UDim2.new(0.58100003, 0, 0.075000003, 0)
+Fly.Font = Enum.Font.Bangers
+Fly.LineHeight = 0.000
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+Border_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Border_4.Thickness = 10
+Border_4.Name = "Border"
+Border_4.Parent = Fly
+
+UICorner_4.CornerRadius = UDim.new(0, 45)
+UICorner_4.Parent = Fly
+
+Text_4.Color = Color3.fromRGB(255, 255, 255)
+Text_4.Thickness = 5
+Text_4.Name = "Text"
+Text_4.Parent = Fly
+
+-- Scripts:
+
+local function LJUWNOB_fake_script() -- OpenButton.Open Script 
+	local script = Instance.new('LocalScript', OpenButton)
+
+	local TweenService = game:GetService("TweenService")
+	local openbutton = script.Parent.Parent.OpenButton
+	local transparency = 0
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out, 0, false, 0)
+	local tween = TweenService:Create(openbutton, tweenInfo, {ImageTransparency = transparency})
+	local transparency2 = 0.5
+	local tweenInfo2 = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out, 0, false, 0)
+	local tween2 = TweenService:Create(openbutton, tweenInfo2, {ImageTransparency = transparency2})
+	local menu = script.Parent.Parent.Main
+	local ready = false
+	local holding = false
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	openbutton.MouseLeave:Connect(function()
+		if holding == true then
+		else
+			tween:Pause()
+			tween2:Play()
+		end
+	end)
+	
+	openbutton.MouseEnter:Connect(function()
+		tween2:Pause()
+		tween:Play()
+	end)
+	
+	openbutton.MouseButton1Down:Connect(function()
+		print("holding")
+		tween2:Pause()
+		tween:Play()
+		ready = true
+		holding = true
+	end)
+	
+	openbutton.MouseButton1Up:Connect(function()
+		print("presssed")
+		if holding == true then
+			holding = false
+		end
+		if ready == true then
+			openbutton.Visible = false
+			menu.Visible = true
+			tween:Pause()
+			tween2:Play()
+			holding = false
+			ready = false
+		end
+	end)
+	
+	openbutton.MouseMoved:Connect(function()
+		if openbutton.GuiState == Enum.GuiState.Press then
+			print("moved when holding")
+			ready = false
+		end
+	end)
+	
+	mouse.Button1Up:Connect(function()
+		holding = false
+		tween:Pause()
+		tween2:Play()
+	end)
+end
+coroutine.wrap(LJUWNOB_fake_script)()
+local function WAZMGA_fake_script() -- OpenButton.Smooth movement 
+	local script = Instance.new('LocalScript', OpenButton)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(WAZMGA_fake_script)()
+local function NPOF_fake_script() -- Soniceexe.Rotate Script 
+	local script = Instance.new('LocalScript', Soniceexe)
+
+	local TweenService = game:GetService("TweenService")
+	local sonicexeframe = script.Parent
+	local targetRotation = 20
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out, 0, true, 0)
+	local tween = TweenService:Create(sonicexeframe, tweenInfo, {Rotation = targetRotation})
+	local targetRotation2 = -20
+	local tweenInfo2 = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out, 0, true, 0)
+	local tween2 = TweenService:Create(sonicexeframe, tweenInfo2, {Rotation = targetRotation2})
+	tween:Play()
+	tween.Completed:Connect(function()
+		tween2:Play()
+	end)
+	tween2.Completed:Connect(function()
+		tween:Play()
+	end)
+end
+coroutine.wrap(NPOF_fake_script)()
+local function JTPIDAW_fake_script() -- sonicexe.Font color changer 
+	local script = Instance.new('LocalScript', sonicexe)
+
+	-- Script for creating a rainbow color loop
+	
+	local Sonicexeexploits = script.Parent  -- Assuming this script is a child of the Sonicexeexploits
+	
+	local rainbowColors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 165, 0), Color3.fromRGB(255, 255, 0), Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130), Color3.fromRGB(238, 130, 238)}
+	local fonts = {Enum.Font.Arcade, Enum.Font.Bangers, Enum.Font.Code}
+	local currentIndex = 1
+	local colorIndex = 1
+	
+	while true do
+		Sonicexeexploits.TextColor3 = rainbowColors[colorIndex]
+		colorIndex = colorIndex % #rainbowColors + 1
+		Sonicexeexploits.Font = fonts[currentIndex]
+		currentIndex = currentIndex % #fonts + 1
+		wait(0.1)  -- Adjust the delay to change the speed of the color loop
+	end
+	
+end
+coroutine.wrap(JTPIDAW_fake_script)()
+local function RACQF_fake_script() -- Main.Smooth movement 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(RACQF_fake_script)()
+local function QOKAORF_fake_script() -- Closebutton.Close script 
+	local script = Instance.new('LocalScript', Closebutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.OpenButton.Visible = true
+	end)
+end
+coroutine.wrap(QOKAORF_fake_script)()
+local function LZEJDZ_fake_script() -- Jump.Font color changer 
+	local script = Instance.new('LocalScript', Jump)
+
+	-- Script for creating a rainbow color loop
+	
+	local textlabel2 = script.Parent  -- Assuming this script is a child of the textlabel
+	
+	local rainbowColors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 165, 0), Color3.fromRGB(255, 255, 0), Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130), Color3.fromRGB(238, 130, 238)}
+	local fonts = {Enum.Font.Arcade, Enum.Font.Bangers, Enum.Font.Code}
+	local currentIndex = 1
+	local colorIndex = 1
+	
+	while true do
+		textlabel2.TextColor3 = rainbowColors[colorIndex]
+		colorIndex = colorIndex % #rainbowColors + 1
+		textlabel2.Font = fonts[currentIndex]
+		currentIndex = currentIndex % #fonts + 1
+		wait(0.1)  -- Adjust the delay to change the speed of the color loop
+	end
+	
+end
+coroutine.wrap(LZEJDZ_fake_script)()
+local function CHPBDP_fake_script() -- Jump.Fly script 
+	local script = Instance.new('LocalScript', Jump)
+
+	local flybutton = script.Parent
+	local clicked = false
+	flybutton.MouseButton1Click:Connect(function()
+		if clicked == true then
+			clicked = false
+			flybutton.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			print("Clicked: Flying1")
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character.Humanoid
+			if humanoid.JumpPower ~= 50 then
+				humanoid.JumpPower = 50
+			end
+	
+		elseif clicked == false then
+			clicked = true
+			flybutton.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			print("Clicked: Flying2")
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character.Humanoid
+			if humanoid.JumpPower ~= 500 then
+				humanoid.JumpPower = 500
+			end
+	
+		end
+	end)
+end
+coroutine.wrap(CHPBDP_fake_script)()
+local function AOZACJD_fake_script() -- Speed.Font color changer 
+	local script = Instance.new('LocalScript', Speed)
+
+	-- Script for creating a rainbow color loop
+	
+	local textlabel2 = script.Parent  -- Assuming this script is a child of the textlabel
+	
+	local rainbowColors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 165, 0), Color3.fromRGB(255, 255, 0), Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130), Color3.fromRGB(238, 130, 238)}
+	local fonts = {Enum.Font.Arcade, Enum.Font.Bangers, Enum.Font.Code}
+	local currentIndex = 1
+	local colorIndex = 1
+	
+	while true do
+		textlabel2.TextColor3 = rainbowColors[colorIndex]
+		colorIndex = colorIndex % #rainbowColors + 1
+		textlabel2.Font = fonts[currentIndex]
+		currentIndex = currentIndex % #fonts + 1
+		wait(0.1)  -- Adjust the delay to change the speed of the color loop
+	end
+	
+end
+coroutine.wrap(AOZACJD_fake_script)()
+local function VAYQ_fake_script() -- Speed.Fly script 
+	local script = Instance.new('LocalScript', Speed)
+
+	local flybutton = script.Parent
+	local clicked = false
+	flybutton.MouseButton1Click:Connect(function()
+		if clicked == true then
+			clicked = false
+			flybutton.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			print("Clicked: Flying1")
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character.Humanoid
+			if humanoid.WalkSpeed ~= 16 then
+				humanoid.WalkSpeed = 16
+			end
+	
+		elseif clicked == false then
+			clicked = true
+			flybutton.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			print("Clicked: Flying2")
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character.Humanoid
+			if humanoid.WalkSpeed ~= 500 then
+				humanoid.WalkSpeed = 500
+			end
+	
+		end
+	end)
+end
+coroutine.wrap(VAYQ_fake_script)()
+local function UVJM_fake_script() -- Fly.Font color changer 
+	local script = Instance.new('LocalScript', Fly)
+
+	-- Script for creating a rainbow color loop
+	
+	local textlabel2 = script.Parent  -- Assuming this script is a child of the textlabel
+	
+	local rainbowColors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 165, 0), Color3.fromRGB(255, 255, 0), Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130), Color3.fromRGB(238, 130, 238)}
+	local fonts = {Enum.Font.Arcade, Enum.Font.Bangers, Enum.Font.Code}
+	local currentIndex = 1
+	local colorIndex = 1
+	
+	while true do
+		textlabel2.TextColor3 = rainbowColors[colorIndex]
+		colorIndex = colorIndex % #rainbowColors + 1
+		textlabel2.Font = fonts[currentIndex]
+		currentIndex = currentIndex % #fonts + 1
+		wait(0.1)  -- Adjust the delay to change the speed of the color loop
+	end
+	
+end
+coroutine.wrap(UVJM_fake_script)()
+local function MWNS_fake_script() -- Fly.Fly script 
+	local script = Instance.new('LocalScript', Fly)
+
+	local flybutton = script.Parent
+	local clicked = false
+	flybutton.MouseButton1Click:Connect(function()
+		if clicked == true then
+			clicked = false
+			flybutton.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			print("Clicked: Flying1")
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character.Humanoid
+			if humanoid.JumpPower ~= 50 then
+				humanoid.JumpPower = 50
+			end
+	
+		elseif clicked == false then
+			clicked = true
+			flybutton.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			print("Clicked: Flying2")
+			local player = game.Players.LocalPlayer
+			local character = player.Character
+			local humanoid = character.Humanoid
+			if humanoid.JumpPower ~= 500 then
+				humanoid.JumpPower = 500
+			end
+	
+		end
+	end)
+end
+coroutine.wrap(MWNS_fake_script)()
