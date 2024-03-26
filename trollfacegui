@@ -48,10 +48,12 @@ OpenButton.ImageTransparency = 0.500
 
 Main.Name = "Main"
 Main.Parent = Gui
+Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.349315047, 0, 0.19826369, 0)
+Main.Selectable = true
 Main.Size = UDim2.new(0.300000012, 0, 0.600000024, 0)
 Main.Visible = false
 
@@ -204,7 +206,7 @@ UICorner_6.Parent = Russia
 
 -- Scripts:
 
-local function RZILZ_fake_script() -- OpenButton.Open Script 
+local function SQIJQDF_fake_script() -- OpenButton.Open Script 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local TweenService = game:GetService("TweenService")
@@ -269,8 +271,8 @@ local function RZILZ_fake_script() -- OpenButton.Open Script
 		tween2:Play()
 	end)
 end
-coroutine.wrap(RZILZ_fake_script)()
-local function TWUSYK_fake_script() -- OpenButton.Smooth movement 
+coroutine.wrap(SQIJQDF_fake_script)()
+local function BCUL_fake_script() -- OpenButton.Smooth movement 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -327,8 +329,8 @@ local function TWUSYK_fake_script() -- OpenButton.Smooth movement
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(TWUSYK_fake_script)()
-local function VPNZBP_fake_script() -- Trollface.Rotate Script 
+coroutine.wrap(BCUL_fake_script)()
+local function UZPAUBU_fake_script() -- Trollface.Rotate Script 
 	local script = Instance.new('LocalScript', Trollface)
 
 	local TweenService = game:GetService("TweenService")
@@ -347,8 +349,8 @@ local function VPNZBP_fake_script() -- Trollface.Rotate Script
 		tween:Play()
 	end)
 end
-coroutine.wrap(VPNZBP_fake_script)()
-local function JLVPUX_fake_script() -- Main.Smooth movement 
+coroutine.wrap(UZPAUBU_fake_script)()
+local function TYDFT_fake_script() -- Main.Smooth movement 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -405,8 +407,8 @@ local function JLVPUX_fake_script() -- Main.Smooth movement
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(JLVPUX_fake_script)()
-local function PRTW_fake_script() -- Closebutton.Close script 
+coroutine.wrap(TYDFT_fake_script)()
+local function DOAWVYN_fake_script() -- Closebutton.Close script 
 	local script = Instance.new('LocalScript', Closebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -414,8 +416,8 @@ local function PRTW_fake_script() -- Closebutton.Close script
 		script.Parent.Parent.Parent.OpenButton.Visible = true
 	end)
 end
-coroutine.wrap(PRTW_fake_script)()
-local function RYOBQF_fake_script() -- Speed.Font color changer 
+coroutine.wrap(DOAWVYN_fake_script)()
+local function OOBX_fake_script() -- Speed.Font color changer 
 	local script = Instance.new('LocalScript', Speed)
 
 	-- Script for creating a rainbow color loop
@@ -436,8 +438,8 @@ local function RYOBQF_fake_script() -- Speed.Font color changer
 	end
 	
 end
-coroutine.wrap(RYOBQF_fake_script)()
-local function BXZT_fake_script() -- Speed.Speed Script 
+coroutine.wrap(OOBX_fake_script)()
+local function NNBWT_fake_script() -- Speed.Speed Script 
 	local script = Instance.new('LocalScript', Speed)
 
 	local flybutton = script.Parent
@@ -485,8 +487,8 @@ local function BXZT_fake_script() -- Speed.Speed Script
 		end
 	end)
 end
-coroutine.wrap(BXZT_fake_script)()
-local function YFQPVEX_fake_script() -- Fly.Font color changer 
+coroutine.wrap(NNBWT_fake_script)()
+local function PYVQS_fake_script() -- Fly.Font color changer 
 	local script = Instance.new('LocalScript', Fly)
 
 	-- Script for creating a rainbow color loop
@@ -507,8 +509,8 @@ local function YFQPVEX_fake_script() -- Fly.Font color changer
 	end
 	
 end
-coroutine.wrap(YFQPVEX_fake_script)()
-local function NRLC_fake_script() -- Fly.Fly script 
+coroutine.wrap(PYVQS_fake_script)()
+local function QVTU_fake_script() -- Fly.Fly script 
 	local script = Instance.new('LocalScript', Fly)
 
 	local flybutton = script.Parent
@@ -556,8 +558,8 @@ local function NRLC_fake_script() -- Fly.Fly script
 		end
 	end)
 end
-coroutine.wrap(NRLC_fake_script)()
-local function MJMV_fake_script() -- Jump.Font color changer 
+coroutine.wrap(QVTU_fake_script)()
+local function ACZE_fake_script() -- Jump.Font color changer 
 	local script = Instance.new('LocalScript', Jump)
 
 	-- Script for creating a rainbow color loop
@@ -578,8 +580,8 @@ local function MJMV_fake_script() -- Jump.Font color changer
 	end
 	
 end
-coroutine.wrap(MJMV_fake_script)()
-local function NEMR_fake_script() -- Jump.Jump Script 
+coroutine.wrap(ACZE_fake_script)()
+local function MLBPPUZ_fake_script() -- Jump.Jump Script 
 	local script = Instance.new('LocalScript', Jump)
 
 	local flybutton = script.Parent
@@ -627,8 +629,8 @@ local function NEMR_fake_script() -- Jump.Jump Script
 		end
 	end)
 end
-coroutine.wrap(NEMR_fake_script)()
-local function HELMVGP_fake_script() -- PMR.Rotate Script 
+coroutine.wrap(MLBPPUZ_fake_script)()
+local function YFBXM_fake_script() -- PMR.Rotate Script 
 	local script = Instance.new('LocalScript', PMR)
 
 	local TweenService = game:GetService("TweenService")
@@ -647,8 +649,8 @@ local function HELMVGP_fake_script() -- PMR.Rotate Script
 		tween:Play()
 	end)
 end
-coroutine.wrap(HELMVGP_fake_script)()
-local function CDAG_fake_script() -- Russia.Rotate Script 
+coroutine.wrap(YFBXM_fake_script)()
+local function XQPPWC_fake_script() -- Russia.Rotate Script 
 	local script = Instance.new('LocalScript', Russia)
 
 	local TweenService = game:GetService("TweenService")
@@ -667,4 +669,4 @@ local function CDAG_fake_script() -- Russia.Rotate Script
 		tween:Play()
 	end)
 end
-coroutine.wrap(CDAG_fake_script)()
+coroutine.wrap(XQPPWC_fake_script)()
