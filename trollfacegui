@@ -31,7 +31,7 @@ local UICorner_6 = Instance.new("UICorner")
 -- Properties:
 
 Gui.Name = "Gui"
-Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.Parent = game:GetService("CoreGui")
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Gui.ResetOnSpawn = false
 
